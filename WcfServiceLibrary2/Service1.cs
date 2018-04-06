@@ -12,6 +12,12 @@ namespace WcfServiceLibrary2
     {
         public string GetData(int value)
         {
+            value += 500;
+            return string.Format("Valor ingresado +5: {0}", value);
+        }
+
+        public string GetData2(int value)
+        {
             value += 5;
             return string.Format("Valor ingresado +5: {0}", value);
         }
